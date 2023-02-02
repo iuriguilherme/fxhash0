@@ -1,15 +1,16 @@
 {
-  "name": "fxhash-boilerplate-webpack-libre",
-  "version": "1.0.1",
-  "description": "a boilerplate to create a generative token on fxhash, with webpack, p5js and GNU Affero. Based on original work from fxhash.xyz",
+  "name": "fibonacci-rainbow-spirals",
+  "version": "1.0.0",
+  "description": "a generative token for fxhash.xyz",
   "main": "index.js",
-  "author": "fxhash, iuriguilherme",
+  "author": "iuriguilherme",
   "license": "GNU AGPLv3",
   "scripts": {
     "build": "webpack --config ./config/webpack.config.prod.js",
     "start": "webpack serve --config ./config/webpack.config.dev.js"
   },
   "dependencies": {
+    "mathjs": "^11.5.1",
     "p5": "^1.5.0"
   },
   "devDependencies": {

@@ -7,6 +7,27 @@ Published on [fx(hash)](https://www.fxhash.xyz/u/Iuri%20Guilherme)
 
 Powered by [fxhash-webpack-boilerplate](https://github.com/fxhash/fxhash-webpack-boilerplate)  
 
+Running
+---
+
+To test the generative token, assuming node.js is already installed in the 
+system (instructions on how to set this up are outside the scope of this 
+document and I don't like the process to write it down, may the force be with 
+you):  
+
+```
+$ git clone https://github.com/iuriguilherme/fxhash0.git  
+$ cd fxhash0  
+$ npm -i  
+$ npm run start  
+```
+
+If that doesn't work, for further instructions:  
+
+* <https://www.fxhash.xyz/doc/artist/guide-publish-generative-token>  
+* <https://github.com/fxhash/fxhash-webpack-boilerplate>  
+* <https://nodejs.org/en/download/>  
+
 LICENSE
 ---
 

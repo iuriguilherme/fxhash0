@@ -78,7 +78,7 @@ let sketch = function(p5) {
   };
   p5.windowResized = function() {
     size = p5.min(p5.windowWidth, p5.windowHeight);
-    p5.createCanvas(size, size);
+    p5.resizeCanvas(size, size);
   }
 }
 let myp5 = new p5(sketch, window.document.body);

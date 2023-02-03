@@ -33,12 +33,8 @@ const maxIterations = 100;
 const maxSpirals = 360;
 const lastFibonacci = getFibonacci(maxIterations);
 const featureColor = getFeatureColor(fxhash);
-const featureHue = math.abs(featureColor % maxSpirals);
-const featureLuminance = math.min(60,
-  math.max(30,
-    math.abs(featureColor % maxIterations)
-  )
-);
+const featureHue = featureColor % 360;
+const featureLuminance = (featureColor % 30) + 30;
 let size;
 
 let sketch = function(p5) {

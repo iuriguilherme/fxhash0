@@ -3,7 +3,8 @@ fx(hash) Generative Token #0
 
 Fibonacci Rainbow Spirals v1.0.0  
 
-Published on [fx(hash)](https://www.fxhash.xyz/u/Iuri%20Guilherme)  
+Published on [fx(hash)](https://www.fxhash.xyz/u/Iuri%20Guilherme): 
+[#24625](https://www.fxhash.xyz/generative/24625)  
 
 Powered by [fxhash-webpack-boilerplate](https://github.com/fxhash/fxhash-webpack-boilerplate)  
 

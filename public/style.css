@@ -18,12 +18,14 @@
  * 
  */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 body {
   /* leave it to hide the scrollbars */
   overflow: hidden;
+  display: grid;
+  place-items: center;
 }
 canvas {
   width: 100%;

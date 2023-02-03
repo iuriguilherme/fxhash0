@@ -4,7 +4,9 @@
  * @copyright Iuri Guilherme 2023  
  * @license GNU AGPLv3  
  * @author Iuri Guilherme <https://iuri.neocities.org/>  
- * @description This is Fibonacci Spirals with p5js for fxhash.xyz GT  
+ * @description This is Fibonacci Rainbow Spirals made with p5js for 
+ * fxhash.xyz GT. Source code available at Github: 
+ * https://github.com/iuriguilherme/fxhash0  
  * 
  * This program is free software: you can redistribute it and/or modify it 
  * under the terms of the GNU Affero General Public License as published by the 
@@ -33,14 +35,14 @@ const maxIterations = 100;
 const maxSpirals = 360;
 const lastFibonacci = getFibonacci(maxIterations);
 const featureColor = getFeatureColor(fxhash);
-const featureHue = math.abs(featureColor % 360);
-const featureLuminance = math.abs(featureColor % 30) + 30;
+const featureHue = math.abs(featureColor % 361);
+const featureLuminance = math.abs(featureColor % 31) + 30;
 let size;
 
 let sketch = function(p5) {
   p5.setup = function() {
     p5.randomSeed(fxrand() * 1e8);
-    size = p5.min(p5.windowWidth, p5.windowHeight);
+    size = p5.min(window.innerWidth, window.innerHeight);
     p5.createCanvas(size, size);
     p5.colorMode(p5.HSL)
     p5.noLoop();
@@ -49,7 +51,8 @@ let sketch = function(p5) {
     p5.background(featureHue, 90, featureLuminance);
     p5.noFill();
     p5.strokeWeight(1);
-    p5.translate(p5.windowWidth / 2, p5.windowHeight / 2);
+    size = p5.min(window.innerWidth, window.innerHeight);
+    p5.translate(size / 2, size / 2);
     for (var iteration = 0; iteration < maxIterations; iteration++) {
       var fibonacci = getFibonacci(iteration);
       for (var spiral = 0; spiral <= maxSpirals; spiral++) {
@@ -73,7 +76,7 @@ let sketch = function(p5) {
     fxpreview();
   };
   p5.windowResized = function() {
-    size = p5.min(p5.windowWidth, p5.windowHeight);
+    size = p5.min(window.innerWidth, window.innerHeight);
     p5.resizeCanvas(size, size);
   }
 }

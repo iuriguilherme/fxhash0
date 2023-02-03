@@ -4,7 +4,7 @@ fx(hash) Generative Token #0
 Fibonacci Rainbow Spirals v1.0.0  
 
 Published on [fx(hash)](https://www.fxhash.xyz/u/Iuri%20Guilherme): 
-[#24625](https://www.fxhash.xyz/generative/24625)  
+[#24631](https://www.fxhash.xyz/generative/24631)  
 
 Powered by [fxhash-webpack-boilerplate](https://github.com/fxhash/fxhash-webpack-boilerplate)  
 
@@ -23,7 +23,7 @@ $ npm -i
 $ npm run start  
 ```
 
-If that doesn't work, for further instructions:  
+If that doesn't work, look for further instructions:  
 
 * <https://www.fxhash.xyz/doc/artist/guide-publish-generative-token>  
 * <https://github.com/fxhash/fxhash-webpack-boilerplate>  
